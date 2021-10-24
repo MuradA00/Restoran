@@ -1,0 +1,368 @@
+
+.hero {
+  background: url("../../img/hero image.png");
+  background-position: center;
+  background-size: cover;
+  &__container {
+    width: 100%;
+    height: 100%;
+  }
+  &__wrapper-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    padding: 322px 0 231px 0;
+
+    font-size: 14px;
+    color: #ffffff;
+
+  }
+}
+
+.wrapper-inner {
+  &__title {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 114%;
+    font-family: $tin;
+    text-align: center;
+    color: $span;
+    span {
+      font-size: 80px;
+      line-height: 115%;
+      white-space: nowrap;
+    }
+  }
+  &__promo-text {
+    position: relative;
+
+    display: block;
+    margin: 12px 0 21px 0;
+
+    font-size: 18px;
+    line-height: 133.3%;
+  }
+  &__promo-text:before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -70px;
+
+    width: 61px;
+    height: 100%;
+    height: 2px;
+    margin-right: 30px;
+
+    background: #c4c4c4;
+  }
+  &__promo-text::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    left: 180px;
+
+    display: block;
+    width: 61px;
+    height: 2px;
+
+    background: #c4c4c4;
+  }
+}
+
+.btn {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 28px;
+
+  font-weight: 700;
+  line-height: 117%;
+  font-family: $sans;
+  color: #ffffff;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+  background: $orange;
+}
+
+
+
+// -------------------------- STORY --------------------------- //
+
+.story {
+  transform: translateY(-100px);
+}
+
+.content {
+  &__top {
+    display: flex;
+    justify-content: center;
+   align-items: center;
+    flex-wrap: wrap;
+    gap: 31px;
+
+  }
+  &__bottom{
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    margin: 166px 0px 0px;
+  }
+
+  &__item {
+    display: flex;
+    flex-shrink: 0;
+    flex-basis: 31.333%;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    min-height: 328px !important;
+    padding: 40px 33px 23px 33px;
+    flex-shrink: 0;
+    flex-grow: 1;
+    font-family: $tin;
+
+    background: #ffffff;
+    box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease;
+    offset: 10px, 10px;
+  }
+  &__item:hover{
+    transform: translateY(-18px);
+    box-shadow: 10px 10px 40px 30px rgba(0, 0, 0, 0.1);
+  }
+  &__name {
+    margin: 16px 0 20px 0;
+    text-align: center;
+    font-size: 26px;
+    line-height: 115%;
+
+    span {
+      color: $span;
+    }
+  }
+  &__descr {
+    color: rgba(101, 99, 99, 1);
+    font-size: 26px;
+    text-align: center;
+  }
+}
+
+
+// ----------------------- STORY - BOTTOM ------------------------------- //
+
+
+.bottom{
+  gap:125px;
+
+  &__title{
+    font-size: 54px;
+    line-height: 114%;
+    font-family: $tin;
+    font-weight: 400;
+    span{
+      color: $span;
+    }
+
+  }
+  &__text-content{
+    max-width: 445px;
+  }
+  &__descr{
+    font-size: 16px;
+    margin: 21px 0px 0px;
+    color: #656363;
+  }
+  &__promo-list{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 40px;
+   margin: 80px 0px 0px;
+  }
+  &__bottom-item{
+    flex-basis: 33.333%;
+  }
+  &__dig{
+    font-size: 40px;
+    line-height: 135%;
+    color: $span;
+  }
+  &__dish{
+    font-size: 20px;
+    line-height: 135%;
+  }
+  &__gallery-img{
+    position: relative;
+    bottom: 40px;
+  }
+
+}
+
+.third{
+  position: absolute;
+  left: 73%;
+  z-index: 2;
+  transition: all 0.6s ease;
+}
+
+.third:hover{
+  z-index: 7;
+  transform: scale(1.1);
+}
+
+.second:hover{
+  transform: scale(1.1);
+
+}
+.second{
+  position: absolute;
+  z-index: 5;
+  top: 55%;
+  left: 103%;
+  transition: all 0.5s ease;
+ }
+.first{
+  top: 35px;
+  position: relative;
+  z-index:5;
+  left:10px;
+  transition: all 0.5s ease;
+}
+
+.first:hover{
+  transform: scale(1.1);
+}
+
+// ---------------------------------- RESERVE ----------------------------- //
+
+.reserve{
+  background: url("../../img/bg-table.png");
+  margin: 122px 0px 0px;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  color: #fff;
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    padding: 99px 0px 88px;
+    align-items: center;
+  }
+
+}
+
+.content-reserve{
+  &__left{
+    display: flex;
+    flex-direction: column;
+
+  }
+  &__offer-text{
+    font-size: 52px;
+    color: $span;
+    font-family: $tin;
+    line-height: 113%;
+    max-width: 601px;
+    font-weight: 400;
+  }
+  &__offer-price{
+    font-size: 24px;
+    margin: 15px 0px 0px;
+    line-height: 133.3%;
+    font-weight: 700;
+  }
+
+}
+
+// ---------------------- DISHES --------------------------- //
+
+.menu{
+  background: url("../../img/bar-bg.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  margin: 152px 0px 0px;
+
+}
+
+.cont{
+  display: flex;
+  flex-direction: column;
+
+ &__title{
+  padding: 96px 0px 0px;
+   color: #fff;
+   font-size: 54px;
+   line-height: 114.8%;
+   font-family: $tin;
+   font-weight: 400;
+   text-align: center;
+ }
+ &__order-list{
+  padding: 140px 0px 226px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+ }
+ &__item{
+   background-color: #fff;
+   padding: 80px 62px 30px 63px;
+   text-align: center;
+   position: relative;
+   transition: all 0.5s ease;
+   width:100%;
+   height: 100%;
+   min-height: 510px;
+   &:hover{
+     transform: scale(1.05);
+   }
+    &>*{
+      margin: 0px 0px 16px 0px;
+    }
+    flex-basis: 33.333%;
+    display: flex;
+    flex-direction: column;
+    &::after{
+      content: "420";
+      position: absolute;
+      font-size: 30px;
+      line-height: 110%;
+      background: $span;
+      padding:33px 31px;
+      border-radius: 50%;
+      border: 7px solid #fff;
+      color: #fff;
+      right: 50px;
+      top: 210px;
+
+    }
+ }
+ &__name{
+   font-size: 26px;
+   line-height: 115%;
+   font-family: $tin;
+ }
+ &__descr{
+   max-width: 225px;
+   font-size: 16px;
+   line-height: 137.5%;
+ }
+ &__button{
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 5px 5px 10px 0px #00000040;
+   padding: 14px 68px;
+   background: $span;
+   color: #fff;
+   text-transform: uppercase;
+   font-weight: 700;
+   line-height: 131.5%;
+ }
+}

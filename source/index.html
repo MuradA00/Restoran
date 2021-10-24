@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="Ru">
+  @@include('_head.html',{})
+<body>
+  <div class="wrapper">
+  @@include('_header.html',{})
+
+  <main>
+    <section class="hero wow animate__animated animate__fadeInDown">
+      <div class="hero__container _container">
+        <div class="hero__wrapper-inner wrapper-inner">
+          <h1 class="wrapper-inner__title">Добро пожаловать в <span> Наш ресторан</span></h1>
+          <p class="wrapper-inner__promo-text">ДОМ ЛУЧШЕЙ ЕДЫ</p>
+          <button class="wrapper-inner__menu btn">Меню</button>
+        </div>
+      </div>
+    </section>
+    <section class="story">
+      <div class="story__container _container">
+        <div class="story__content content">
+          <div class="content__top wow animate__animated animate__fadeInUp">
+            <div class="content__item">
+              <img src="img/card.svg" alt="card-icon" class="content__icon">
+              <p class="content__name">Магическая <span>Атмосфера</span></p>
+              <p class="content__descr">В нашем заведении царит магическая атмосфера
+                наполненная вкусными ароматами</p>
+            </div>
+            <div class="content__item">
+              <img src="img/card.svg" alt="card-icon" class="content__icon">
+              <p class="content__name">Лучшее качество <span>Еды</span></p>
+              <p class="content__descr">Качество нашей <br>
+                Еды - отменное!
+                </p>
+            </div>
+            <div class="content__item">
+              <img src="img/card.svg" alt="card-icon" class="content__icon">
+              <p class="content__name">Недорогая <span>Еда</span></p>
+              <p class="content__descr">Стоимость нашей Еды зависит только от ее количества. Качество всегда на высоте!</p>
+            </div>
+          </div>
+          <div class="content__bottom bottom ">
+            <div class="bottom__text-content wow animate__animated animate__fadeInLeftBig">
+            <h3 class="bottom__title title-def">Наша <span>История</span></h3>
+            <p class="bottom__descr">Как и у любого другого самобытного места, у нас есть своя, особая история. Идея ресторана пришла основателям неожиданно. Во время прогулки по лесу создатель нашего ресторана застрял в сотнях километров от ближайшего населенного пункта. Вдали от цивилизации и связи им пришлось навремя обустровать себе нехитрый быт, добывать и готовить себе еду.</p>
+            <div class="bottom__promo-list">
+              <div class="bottom__item">
+                <p class="bottom__dig">93</p>
+                <p class="bottom__dish">Напитки</p>
+              </div>
+              <div class="bottom__item">
+                <p class="bottom__dig">206</p>
+                <p class="bottom__dish">Еда</p>
+              </div>
+              <div class="bottom__item">
+                <p class="bottom__dig">71</p>
+                <p class="bottom__dish">Закуски</p>
+              </div>
+            </div>
+          </div>
+            <div class="bottom__gallery-img wow animate__animated animate__fadeInRightBig">
+              <img src="img/card1.png" alt="story-image" class="bottom__img first">
+              <img src="img/story2.png" alt="story-image" class="bottom__img second">
+              <img src="img/card3.png" alt="story-image" class="bottom__img third">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reserve wow animate__animated animate__fadeInLeft">
+      <div class="reserve__container _container">
+        <div class="reserve__content content-reserve ">
+          <div class="content-reserve__left">
+            <p class="content-reserve__offer-text">Отпразднуйте в одном из
+              самых лучших ресторанов.</p>
+              <p class="content-reserve__offer-price">Только в этом месяце бизнес-ланч от 250 ₽</p>
+          </div>
+          <button class="reserve__button btn">ЗАКАЗ СТОЛИКА</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu wow animate__animated animate__fadeInUp">
+      <div class="menu__container _container">
+        <div class="menu__cont cont">
+          <h6 class="cont__title">Наше меню</h6>
+          <div class="cont__order-list">
+            <a href="#" class="cont__item first-card">
+              <img src="img/hamburger.png" alt="hamburger" class="cont__image">
+              <p class="cont__name">Гамбургер макси</p>
+              <p class="cont__descr">Максимально толстый слой мяса</p>
+              <button class="cont__button">ЗАКАЗАТЬ</button>
+            </a>
+            <a href="#" class="cont__item">
+              <img src="img/hamburger.png" alt="hamburger" class="cont__image">
+              <p class="cont__name">Гамбургер макси</p>
+              <p class="cont__descr">Максимально толстый слой мяса</p>
+              <button class="cont__button">ЗАКАЗАТЬ</button>
+            </a>
+            <a href="#" class="cont__item">
+              <img src="img/hamburger.png" alt="hamburger" class="cont__image">
+              <p class="cont__name">Гамбургер макси</p>
+              <p class="cont__descr">Максимально толстый слой мяса</p>
+              <button class="cont__button">ЗАКАЗАТЬ</button>
+            </a>
+
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  @@include('_footer.html',{})
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+crossorigin="anonymous"></script>
+<script src="js/wow.min.js"></script>
+<script>new WOW().init();</script>
+  <script src="js/icon-menu.js"></script>
+  <script src="js/common.min.js"></script>
+</body>
+
+</html>
