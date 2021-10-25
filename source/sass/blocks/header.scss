@@ -81,6 +81,15 @@
     position: relative;
     font-weight: 700;
   }
+   &__call::before{
+    content: url("../../img/phone.svg");
+    position: absolute;
+    width:100%;
+    height: 100%;
+    max-width: 23px;
+    min-height: 23px;
+    left:0;
+  }
 
   &__promo{
     line-height: 135%;
