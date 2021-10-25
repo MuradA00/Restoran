@@ -4,7 +4,7 @@
 @import "general/global";
 @import "general/blocks";
 @import "blocks/main";
-
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Jost&family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Tinos&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost&family=Roboto:wght@400;500;700&family=Tinos&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost&family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Tinos&display=swap');
 
@@ -16,10 +16,57 @@
 
 // ------------------------ MEDIA ------------------------ //
 
+@media (max-width: 650px){
+  .gallery-grid::after{
+    display: none;
+  }
+  .gallery-grid::before{
+    display:none;
+  }
+}
+
 @media (max-width: 1165px){
   .gallery-query{
     flex-direction: column;
     align-items: center;
+  }
+  .gallery-grid__body{
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .body-gallery{
+    &__left{
+      gap: 30px;
+      display: flex;
+      flex-direction: column;
+    }
+    &__img-left{
+      margin:0;
+    }
+    &__right{
+      gap: 30px;
+
+      display: flex;
+      flex-direction: column;
+    }
+    &__img-soup{
+      flex-basis: 100%;
+      margin:0;
+    }
+    &__img-coffee{
+      flex-basis: 100%;
+      height: 200px;
+    }
+  }
+  .body-chefs{
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    &__img{
+      display: block;
+      flex-basis: 100%;
+    }
   }
 }
 
@@ -261,3 +308,16 @@ li {
      }
    }
 
+@media (max-width: 390px){
+  .cont__item::after{
+    padding: 20px 20px;
+    top: 180px;
+  }
+}
+
+@media (max-width: 330px){
+  .cont__item::after{
+    padding: 15px 15px;
+    top: 160px;
+  }
+}
