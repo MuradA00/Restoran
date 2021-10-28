@@ -78,33 +78,34 @@
   align-items: center;
   padding: 14px 28px;
   border-top-left-radius: 29px;
-  border-bottom-right-radius: 29px;
+  border-bottom-right-radius: 30px;
+
   position: relative;
   font-weight: 700;
   line-height: 117%;
   font-family: $sans;
-  color: #ffffff;
+  color: #fff;
   text-transform: uppercase;
   white-space: nowrap;
-  transition: all 0.5s ease;
+  transition: all 0.7s ease;
   background: $orange;
   z-index: 1;
   &:before{
     content: '';
     position: absolute;
-    top:0; left:0;
-    height: 100%;
-    width:100%;
-    background: rgb(228, 57, 18);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     z-index: -1;
-    transition: .2s linear;
-    clip-path: circle(0% at 0% 5%);
+    background: rgb(194, 68, 0);
+    transition: all 0.4s ease;
+    width: 0%;
+    height: 100%;
   }
   &:hover::before{
-
     border-top-left-radius: 29px;
-    border-bottom-right-radius: 29px;
-    clip-path: circle(90%);
+    border-bottom-right-radius: 30px;
+  width: 100%;
   }
 
 }

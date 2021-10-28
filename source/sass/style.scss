@@ -32,6 +32,10 @@ body::-webkit-scrollbar-thumb{
 
 }
 
+body::-webkit-scrollbar-thumb:active{
+ background: #c9600a;
+}
+
 
 // ------------------------ MEDIA ------------------------ //
 
@@ -352,13 +356,18 @@ li {
   right: 10%;
   background: $orange;
   z-index: 10000;
-  padding: 20px 20px;
+  padding: 20px 27px;
+
   border-radius: 50%;
+  font-size: 30px;
+  color: #fff;
   cursor: pointer;
   border: 3px solid #fff;
   transition: all 0.7s ease;
   &:hover{
     transform: translateY(-25px);
+    background: rgb(194, 68, 0);
     box-shadow: 1px 2px 3px 2px black;
   }
+
 }
