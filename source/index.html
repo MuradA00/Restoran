@@ -2,9 +2,8 @@
 <html lang="Ru">
   @@include('_head.html',{})
 <body>
-  <div class="wrapper">
+  <div  class="wrapper">
   @@include('_header.html',{})
-
   <main>
     <section class="hero wow animate__animated animate__fadeInDown">
       <div class="hero__container _container">
@@ -148,7 +147,9 @@
         </div>
       </section>
 
-      <section class="chefs  wow animate__animated animate__fadeInDown">
+      <div class="to-top" id="topIcon"><img src="img/to-top.svg" width="40px" height="30px"></div>
+
+      <section class="chefs wow animate__animated animate__fadeInDown">
         <div class="chefs__container _container">
           <h8 class="chefs__title title-def">Наши <span>Повара</span></h8>
           <div class="chefs__body body-chefs">
@@ -164,6 +165,9 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
 integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+<script src="js/to-top.js"></script>
 <script src="js/wow.min.js"></script>
 <script>new WOW().init();</script>
 <script src="js/slicker.js"></script>
@@ -171,5 +175,4 @@ crossorigin="anonymous"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/common.min.js"></script>
 </body>
-
 </html>

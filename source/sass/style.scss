@@ -31,6 +31,8 @@ body::-webkit-scrollbar-thumb{
   transition: all 0.5s ease;
 
 }
+
+
 // ------------------------ MEDIA ------------------------ //
 
 @media (max-width: 650px){
@@ -40,6 +42,10 @@ body::-webkit-scrollbar-thumb{
   .gallery-grid::before{
     display:none;
   }
+}
+
+.simplebar-scrollbar::before{
+  background: $orange;
 }
 
 @media (max-width: 1165px){
@@ -336,5 +342,23 @@ li {
   .cont__item::after{
     padding: 15px 15px;
     top: 160px;
+  }
+}
+
+
+#topIcon{
+  position: fixed;
+  bottom: 70px;
+  right: 10%;
+  background: $orange;
+  z-index: 10000;
+  padding: 20px 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid #fff;
+  transition: all 0.7s ease;
+  &:hover{
+    transform: translateY(-25px);
+    box-shadow: 1px 2px 3px 2px black;
   }
 }
